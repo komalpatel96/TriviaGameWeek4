@@ -1,0 +1,75 @@
+body{
+	background-color: #eeeeee;
+}
+
+.container{
+	width: 600px;
+	height: 500px;
+	margin: 50 auto;
+	background-color: #fff;
+	padding: 10px 50px 50px 50px;
+	border-radius: 50px;
+	border: 2px solid #cbcbcb;
+	box-shadow: 10px 15px 5px #cbcbcb;
+	text-align: center;
+}
+
+.answerChoices{
+	text-align: center;
+	width: 250px;
+    padding-left: 40%;
+}
+
+.container h1{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 60px;
+	text-align: center;
+	padding: 2px 0px;
+	border-radius: 50px;
+}
+
+.container #question { 
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 30px;
+	color: #5a6772;
+}
+
+.answerList{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.thisChoice{
+	background-color: #778897;
+	width: 250px;
+	font-size: 20px;
+	color: white;
+	border: 1px solid #1d3c6a;
+	border-radius:50px;
+	margin: 10px 40px 10px 0px;
+	padding: 10px 10px;
+	text-align: center;
+}
+
+
+ #startBtn, #startOver{
+	background-color: #778897;
+	width: 250px;
+	font-size: 20px;
+	color: white;
+	border: 1px solid #1d3c6a;
+	border-radius:50px;
+	margin: 10px 40px 10px 0px;
+	padding: 10px 10px;
+	text-align: center;
+
+}
+
+.thisChoice:hover, #startBtn:hover, #startOver:hover{
+	cursor: pointer;
+	background-color: #57636e;
+}
+
+.thisChoice:focus, #startBtn:focus, #startOver:focus{
+	outline:0;
+}
