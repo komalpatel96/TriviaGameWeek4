@@ -86,9 +86,9 @@ $ ("#startBtn").on("click", function(){
 //newGame
 function newGame(){
 	$ ("#finalMessage").empty();
-	$ ("correctAnswers").empty();
-	$ ("incorrectAnswers").empty();
-	$ ("unansweredQuestions").empty(); 
+	$ ("#correctAnswers").empty();
+	$ ("#incorrectAnswers").empty();
+	$ ("#unansweredQuestions").empty(); 
 	$("#startOver").hide();
 
 
@@ -149,25 +149,25 @@ function answerPage(){
 	$ (".thisChoice").hide();
 	$ (".question").empty();
 
-	var rightAnswerText = triviaQuestions[currentQuestion].answerChoices;
-	var rightAnswerIndex = triviaQuestions[currentQuestion].correctAnswer;
+	var AnswerText = triviaQuestions[currentQuestion].answerChoices;
+	var AnswerIndex = triviaQuestions[currentQuestion].correctAnswer;
 	//$ ("#gif").html("<img src = ")/////image link
 
 //checks to see if correct, incorrect or unanswered
-	if ((userSelect == rightAnswerIndex) && (answered == true)){
+	if ((userSelect == AnswerIndex) && (answered == true)){
 		correctAnswer++;
 		$("#message").html(messages.correct);
-		$("#correctAnswer").html("The correct answer was: " + rightAnswerText);
+		$("#correctAnswer").html("The correct answer was: " + AnswerText);
 	}
-	else if ((userSelect !== rightAnswerIndex) && (answered == true)){
+	else if ((userSelect !== AnswerIndex) && (answered == true)){
 		incorrectAnswer++;
 		$("#message").html(messages.incorrect);
-		$("#correctAnswer").html("The correct answer was: " + rightAnswerText);
+		$("#correctAnswer").html("The correct answer was: " + AnswerText);
 	}
 	else {
 		unanswered++;
 		$("#message").html(messages.endTime);
-		$("#correctAnswer").html("The correct answer was: " + rightAnswerText);
+		$("#correctAnswer").html("The correct answer was: " + AnswerText);
 		answered = true;
 	}
 
